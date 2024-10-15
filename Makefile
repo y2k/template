@@ -20,6 +20,6 @@ clean:
 
 .PHONY: init
 init:
-	@ rm -rf .git && rm -f .gitmodules && git init .
+	@ rm -rf .git && rm -rf vendor && rm -f .gitmodules && git init .
 	@ git submodule add git@github.com:y2k/prelude.git vendor/prelude
 	@ git submodule add git@github.com:y2k/packages.git vendor/packages
